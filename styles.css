@@ -1,3 +1,4 @@
+
 body{
   font-family: sans-serif;
 }
@@ -7,7 +8,27 @@ ul {
 
 .octocat{
 margin:20px;
+
 }
+
+.octocat > a{
+  display:inline-block;
+
+}
+
+.image-footer::after{
+  width: 0;
+height: 0;
+content:'';
+position:absolute;
+top: -11px;
+right: 4px;
+border-style: solid;
+border-width: 10px 5px 0 5px;
+border-color:#d8d8d8 transparent transparent;
+
+}
+
 
 .image-number{
   color:#d8d8d8;
@@ -20,7 +41,6 @@ margin:20px;
 img{
   width:100%;
   border: solid 2px #d8d8d8;
-  float:left;
   margin-bottom: 7px;
 }
 
@@ -48,4 +68,5 @@ a{
 .image-footer{
 border-bottom: #d8d8d8 solid 1.25px;
 padding-bottom: 18px;
+position:relative;
 }
